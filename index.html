@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>AKE Soluções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo_ake_horizontal.svg" alt="">
+        </div>
+        <ul id="menuList">
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#avaliacao">Avaliações</a></li>
+            <li><a href="#cotacao">Cotação</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Buscar produtos" autocomplete="off">
+                <button class="btn_lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box">
+    
+            </div>
+        </div>
+
+        <div class="nav__contato">
+            <a href="#"><img src="assets/icons/facebook.svg" alt="facebook" class="container__imagem"></a>
+            <a href="#"><img src="assets/icons/instagram.svg" alt="instagram" class="container__imagem"></a>
+            <a href="https://www.tiktok.com/@akesolucoes"><img src="assets/icons/tiktok.svg" alt="tiktok" class="container__imagem"></a>
+            <a href="https://wa.me/5541988227667"><img src="assets/icons/whatsapp.svg" alt="whatsapp" class="container__imagem"></a>
+        </div>
+    </nav>
+
+    <section class="ofertas">
+        <div id="slider">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2" >
+            <input type="radio" name="slider" id="s3" >
+            <label for="s1" id="slide1">
+                <img src="assets/caterpillar/cat1.jpg">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="assets/caterpillar/cat2.jpg">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="assets/caterpillar/cat3.jpg">
+            </label>
+        </div>
+        <a href="#" class="botao"> Ver Oferta</a>
+    </section>
+
+    <section class="swipe_produtos produtos__section">
+        <div class="swiper swiperProdutos"><a name="produtos"><h3 class="titulo__produto">Nossos Produtos e Serviços</h3></a>
+            <div class="swiper-wrapper produtos">
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+              <div class="swiper-slide item_produto"><img src="assets/no_img.svg" alt="" class="produtos__img"><button class="produto__button">Veja Mais</button></div>
+            </div>
+            <div class="swiper-button-next swiper-produtosBtn"></div>
+            <div class="swiper-button-prev swiper-produtosBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </section>
+
+    <section class="quem_somos">
+        <h2 class="quem_somos_h">Quem somos?</h2><a name="quem-somos"></a>
+        <img class="img_quem_somos" src="assets/quem_somos.svg" >
+        <p class="quem_somos_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum. Curabitur sagittis, dolor interdum tristique pharetra, augue eros rutrum ligula, sit amet accumsan ex nisl id est. Phasellus faucibus, elit at cursus vehicula, mauris sem malesuada lectus, a sodales orci justo eget magna. Ut sed lorem in arcu ultricies maximus nec id nisl. Morbi ultrices interdum sapien nec consequat. Integer orci enim, semper sit amet ante ut, consequat faucibus libero. Quisque dignissim nibh vitae congue viverra. Nam imperdiet, libero eleifend eleifend blandit, ante metus malesuada mi, et facilisis leo mi cursus felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum. Curabitur sagittis, dolor interdum tristique pharetra, augue eros rutrum ligula, sit amet accumsan ex nisl id est. Phasellus faucibus, elit at cursus vehicula, mauris sem malesuada lectus, a sodales orci justo eget magna.</p>
+
+    </section>
+
+    <section class="valores">
+
+        <h2 class="valores__titulo">Inserir frase de valor sobre a marca!</h2>
+        <ul class="lista_valores">
+            <li class="lista_valores__itens"><img src="assets/valores/qualidade.svg" class="img_valores">
+                <p class="p_valores">Produtos de Qualidade</p></li>
+            <li class="lista_valores__itens"><img src="assets/valores/garantia.svg" class="img_valores">
+                <p class="p_valores">Garantia</p></li>
+            <li class="lista_valores__itens"><img src="assets/valores/frete.svg" class="img_valores">
+                <p class="p_valores">Frete</p></li>
+            <li class="lista_valores__itens"><img src="assets/valores/agilidade.svg" class="img_valores">
+                <p class="p_valores">Agilidade</p></li>
+            <li class="lista_valores__itens"><img src="assets/valores/suporte.svg" class="img_valores">
+                <p class="p_valores">Suporte Técnico</p></li>
+            <li class="lista_valores__itens"><img src="assets/valores/condicao.svg" class="img_valores">
+                <p class="p_valores">Melhor preço e condições do mercado</p></li>
+        </ul>
+    </section>
+
+    <section class="swipe_clientes">
+        <a name="avaliacao"></a><h3 class="clientes__titulo">O que dizem nossos clientes</h3>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide clientes__slide"><h4 class="clientes__subtitulo">João</h4><p class="clientes__texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum.”</p></div>
+              <div class="swiper-slide clientes__slide"><h4 class="clientes__subtitulo">Maria</h4><p class="clientes__texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum.”</p></div>
+              <div class="swiper-slide clientes__slide"><h4 class="clientes__subtitulo">Pedro</h4><p class="clientes__texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum.”</p></div>
+              <div class="swiper-slide clientes__slide"><h4 class="clientes__subtitulo">Laura</h4><p class="clientes__texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum.”</p></div>
+              <div class="swiper-slide clientes__slide"><h4 class="clientes__subtitulo">Luiz</h4><p class="clientes__texto">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis justo a finibus blandit. Maecenas porta ut libero sed aliquet. Integer porta sit amet dui vitae dictum.”</p></div>
+            </div>
+            <div class="swiper-button-next btn_clientes left"></div>
+            <div class="swiper-button-prev btn_clientes right"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+    <section class="cotacao"><a name="cotacao"></a>
+        <div><img src="assets/img_cotacao.svg" class="img_cotacao"></div>
+        <div><a href="https://wa.me/5541988227667"><button class="button_cotacao">Faça uma cotação</button></a></div>
+    </section>
+
+    
+
+    <footer class="rodape">
+        <img class="logo_rodape" src="assets/logo_ake.svg">
+        <div><a name="contato"></a>
+        <ul class="rodape_lista__institucional">
+            <li class="titulo_footer">Institucional</li>
+            <li class="lista-rodape__item">A empresa</li>
+            <li class="lista-rodape__item">Nosso produtos</li>
+            <li class="lista-rodape__item">Cotação</li>
+        </ul>
+        </div>
+        <div class="rodape_atendimento">
+            <div class="rodape_atendimento_horario">
+                <p class="titulo_footer">Horário de atendimento</p>
+                <p class="lista-rodape__item">Segunda às sextas das 08:00 às 19:00 horas</p>
+            </div>
+            <div class="rodape_atendimento_endereco">
+                <p class="titulo_footer">Endereço</p>
+                <p class="lista-rodape__item">Empresa 1234, Bairro, Curitiba, Paraná</p>
+            </div>
+            <div class="rodape_atendimento_fale">
+                <p class="titulo_fale">Fale Conosco</p>
+                <ul class="listas_icons">
+                    <li><img src="assets/icons/mail.svg" class="img_footer"></li>
+                    <li class="lista-rodape__item"><p>contato@ake.com.br</p></li>
+                </ul>
+                <a href="https://wa.me/5541988227667"><ul class="listas_icons">    
+                    <li><img src="assets/icons/whatsapp.svg" class="img_footer"></li>
+                    <li class="lista-rodape__item"><p>(41) 95234-7869</p></li>
+                </ul> </a>     
+            </div>
+        </div>
+
+        <div class="rodape_atendimento_redes">
+            <p class="titulo_footer">Siga nossas redes sociais</p>
+            <ul class="listas_icons">
+                <li><img src="assets/icons/facebook.svg" alt="" class="img_footer"></li>
+                <li class="lista-rodape__item"><p>@facebookAKE</p></li>
+            </ul>
+            <ul class="listas_icons">
+                <li><img src="assets/icons/instagram.svg" alt="" class="img_footer"></li>
+                <li class="lista-rodape__item"><p>@instagramAKE</p></li>
+            </ul>
+            <a href="https://www.tiktok.com/@akesolucoes"> <ul class="listas_icons">
+                <li><img src="assets/icons/tiktok.svg" alt="" class="img_footer"></li>
+                <li class="lista-rodape__item"><p>@tiktokAKE</p></li> 
+            </ul></a>
+        </div>
+        
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          }, 
+   
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          breakpoints:{
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 30, 
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+          },
+        });
+
+        var swiper = new Swiper(".swiperProdutos", {
+            slidesPerView: 2,
+            spaceBetween: -25,
+     
+   
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          breakpoints:{
+            0: {
+                slidesPerView: 2,
+                spaceBetween: -35, 
+            },
+            520: {
+                slidesPerView: 3,
+                spaceBetween: -25,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: -40,
+            },
+          },
+        });
+      </script>
+
+      <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+                
+    </script>
+    <script src="autocomplete.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+@import url("styles/header.css");
+@import url("styles/footer.css");
+@import url("styles/swipe_oferta.css");
+@import url("styles/swipe_autoplay.css");
+@import url("styles/valores.css");
+@import url("styles/produtos.css");
+@import url("styles/search.css");
+
+
+:root{
+    --cor-de-fundo: #42464f;
+    --cor-de-rodape: #03080D;
+    --amarelo: #F6D000;
+    --font-preta: #0B121A;
+    --font-branca: #FAF5FF;
+    --fonte-principal: "Archivo", sans-serif;
+}
+
+html, body { max-width: 100%; overflow-x: hidden; }
+body {
+
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--font-preta);
+    display: block;
+    justify-content: center;
+    align-items: center;  
+    text-decoration: none;
+    text-align: center;
+    max-width: 100%;
+    font-weight: 700;
+    margin: 1.5em 4em 0;
+}
+
+.quem_somos {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-branca);
+    width: 100%;
+}
+
+.quem_somos_h {
+    padding: 2em 1.5em 0.5em;
+    color: var(--font-branca);
+    font-weight: 900;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: var(--fonte-principal);
+}
+
+.img_quem_somos {
+    max-width: 100%;
+    padding: 1em 0;
+}
+
+.quem_somos_p {
+    text-align: left;
+    padding: 1em 1.5em;
+    font-size: 16px;
+    line-height: 1.5;;
+}
+
+h3 {
+    margin: 0 10vw;
+}
+
+.clientes__titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 1em;
+    color: var(--font-branca);
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.cotacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.btn_clientes {
+    color: #F6D000;
+    transition: color 0.3s ease;
+}
+
+.btn_clientes::after{
+    color: #F6D000;
+    transition: color 0.3s ease;
+
+}
+
+.btn_clientes:hover{
+    color:#eedc76;
+}
+
+.img_cotacao {
+    max-width: 100%;
+    padding: 1.5em 0 2em;
+}
+
+.button_cotacao {
+    margin: 0 10vw;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    padding: 1.5em 5.5em;
+    color: var(--font-preta);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.swiper-navBtn {
+    color: var(--amarelo);
+}
+
+
+@media screen and (min-width: 1024px){
+    .botao{
+        display: flex;
+        justify-content: center;
+        max-width: 20%;
+        padding: 1.5em 0;
+        margin: 7em auto 3em; 
+    }
+    
+    .quem_somos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 70%;
+        padding: 5em 0 2.5em 22vw;
+    }
+
+    .quem_somos_h {
+        padding: 0.5em 0;
+    }
+
+    .img_quem_somos {
+        width: 80%;
+    }
+
+    .quem_somos_p {
+        padding: 1em 0;
+        max-width: 80%; 
+    }
+
+    .cotacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90%;
+        padding: 6vw 0 2.5em 22vw;
+    }
+
+    .button_cotacao {
+        margin: 0 21vw;
+        max-width: 20%;
+        padding: 1em 2em;
+
+    }
+
+    .clientes__titulo {
+        padding: 2.5em 0 1.5em 6vw;
+    }
+
+    
+
+    
+}

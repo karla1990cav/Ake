@@ -1,0 +1,62 @@
+    .mySwiper {
+      width: 70%;
+    }
+
+    .clientes__subtitulo {
+      text-align: left;
+      color: var(--font-branca);
+      padding: 0.5em 1em;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .clientes__texto {
+      text-align: justify;
+      background-color: #3b3d40;
+      padding: 1.5em 1.5em 2em 2em;
+      font-size: 16px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 80%;
+      height: 80%;
+      padding: 30px;
+    }
+
+
+    
+@media screen and (min-width: 1024px){
+  .swipe_clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 0 0 5vw;
+
+}
+  
+  .mySwiper{
+    width: 100%;
+
+  }
+  .left{
+    left: -50px;
+  }
+
+  .clientes__slide{
+    max-width: 80%;
+  }
+
+  .clientes__texto{
+    max-width: 80%;
+  }
+}
+

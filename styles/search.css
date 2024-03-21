@@ -1,0 +1,42 @@
+.search-box{
+    width: 17em;
+    background: #fff;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 0.2em 10px;
+}
+input{
+    flex: 1;
+    height: 2em;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: #333;
+}
+btn_lupa{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button .fa-solid{
+    width: 22px;
+    color: #555;
+    font-size: 20px;
+    cursor: pointer;
+}
+::placeholder{
+    color: #555;
+}
+
+
+@media (max-width:500px){
+    
+    .search-box{
+        display: none;
+    }
+
+}

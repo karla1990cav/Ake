@@ -1,0 +1,74 @@
+footer {
+    background-color: var(--cor-de-rodape);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1.5em 10vw 4em ;
+}
+
+p, ul {
+    color: var(--font-branca);
+}
+
+.logo_rodape {
+    max-width: 30%;
+    padding: 1em 5em 2em 0;
+}
+
+
+.listas_icons {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.titulo_footer {
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+.lista-rodape__item{
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.img_footer {
+    padding: 0 0.5em 0 0;
+}
+
+.titulo_fale {
+    font-weight: 700;
+    padding: 1em 0 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    footer {
+        justify-content: space-between;
+        padding: 0 22vw 5em ;
+    }
+
+    .logo_rodape {
+        max-width: 23%;
+        padding: 0 6em 0 0;
+    }
+
+    .rodape_lista__institucional {
+        padding: 4em 6em 0 0;
+    }
+
+    .rodape_atendimento {
+        padding: 4em 0 0 0;
+    }
+
+
+
+
+
+}
+
